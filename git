@@ -1,0 +1,92 @@
+ 235  sudo apt update
+  236  sudo apt-get install git
+  237  git --version
+  238  history 
+  239  clear
+  240  git config --global user.name pavansw
+  241  git config --global user.email pavan@simplilearn.org
+  242  mkdir project123
+  243  cd project123
+  244  pwd
+  245  ls
+  246  git init 
+  247  ls
+  248  ls -a
+  249  ز sample.txt
+  250  touch hello.py
+  251  ls
+  252  ls -a
+  253  ls .git/
+  254  history 
+  255  ls
+  256  vi sample.txt 
+  257  vi hello.py 
+  258  git add sample.txt
+  259  git status
+  260  vi sample.txt 
+  261  git status
+  262  git rm --cached sample.txt 
+  263  git rm --cached -fsample.txt 
+  264  git rm --cached -f sample.txt 
+  265  git status
+  266  cat sample.txt 
+  267  git add sample.txt 
+  268  cat sample.txt 
+  269  git status
+  270  git add hello.py 
+  271  vi bye.py
+  272  git status
+  273  git commit -m "Initial Commit with sample and hello"
+  274  git status
+  275  ls
+  276  git logs
+  277  git log
+  278  ls
+=======================================
+hard and Soft reset
+
+vi hello.py 
+  288  git add hello.py 
+  289  git status
+  290  git commit -m "My second commit"
+  291  git log
+  292  vi hello.py 
+  293  git status
+  294  git reset --soft c5e00cc
+  295  ls
+  296  git log
+  297  git status
+  298  cat hello.py 
+  299  vi hello.py 
+  300  git add hello.py 
+  301  git commit -m "trying to recover older commit"
+  302  git add bye.py 
+  303  git commit -m "third commit demo"
+  304  git log 
+  305  ls
+  306  cat hello.py 
+  307  git reset --hard c5e00cc0c
+  308  ls
+  309  cat hello.py 
+  310  git log 
+================================================
+Create Git Hub account , Login and create new public repository
+
+  313  cd ..
+  314  git clone https://github.com/pavansw/demoGitGitHub.git
+  315  ls
+  316  cd demoGitGitHub/
+  317  ls -a
+  318  vi sample.py
+  319  vi planning.txt
+  320  echo "planning.txt" > .gitignore
+  321  cat .gitignore 
+  322  ls
+  323  vi abc.txt
+  324  ls
+  325  git add .
+  326  git status
+  327  git commit -m "Initial commit with ignorring pan file"
+  328  git logs
+  329  git log
+  330  git push origin master
